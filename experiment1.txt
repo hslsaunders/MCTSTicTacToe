@@ -1,0 +1,11 @@
+In this experiment, we simulated playing the vanilla version of the MCTS bot against itself, 
+one with a static 100 nodes/tree, and the other with varying amounts of nodes/tree. We tested
+with values of 50, 100, 500, and 1000. With 50 nodes/tree, (half of its opponents), the bot
+lost most of its matches, winning 33 out of the 100 games. This makes sense given that it's
+considering far fewer actions before making it's decision each turn. With 100, (the same as
+its opponent) the result was 51 wins, which is statistically appropriate given they are even
+matches. Then with 500 the number of wins rises dramatically up to 85, marking how significant
+the jump from 100 to 500 is in terms of it's ability to deduce better decisions. Finally, from
+500 to 1000, the bot won 87 times, a very slight improvement over 500. Despite having twice as
+many nodes as its predecessor, the 1000 nodes/tree bot only won two additional matches. This
+shows how the returns begin to diminish significantly as the number of nodes/tree increases. 
